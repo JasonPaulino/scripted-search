@@ -35,7 +35,7 @@ function addToHTML(result, snippet){
     var url = result.html_url;
     var avatarUrl = result.repository.owner.avatar_url;
 
-    var image = '<img class="smalllogo" src=' + avatarUrl + ">";
+    var image = '<img class="small-logo" src=' + avatarUrl + ">";
     var link = "<a target=_blank href=" + url + ">" + path + "</a>";
     var preview = "<div>"+ snippet +"</div>";
 
