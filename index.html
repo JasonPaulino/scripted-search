@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     #logo1{
+    display: block;
+    width: 530px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom:25px;
+    }
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 100px;
+    display: inline;
+    color: #EF5330;
+}
+
+.title-logo {
+    height: 70px;
+    margin-left: 5px;
+    vertical-align: baseline;
+}
+  #select {
+     width:150px;
+     height:35px;
+     background-color:white;
+      }
+ #input {
+     width:300px;
+     height:35px;
+
+     }
+  #loadingIcon {
+    display: none;
+    width: 33%;
+    margin-left:33%;
+  }
+body {
+    background-color: pink;
+    font-family:  'Lobster Two', cursive;
+}
+
+.search {
+    text-align: center;
+    }
+.btn-primary{
+    border-radius:20px;
+    height:35px;
+    background-color:#ef5330;
+    border:none;
+    font-size:20px;
+    }
+
+    .result .small-logo {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        display: inline;
+    }
+
+    .smalllogo-title {
+     font-size: 24px;
+     text-decoration: none;
+     padding-bottom: 20px;
+    }
+
+    div {
+        font-family: 'Ubuntu', sans-serif;
+      margin-top: 0px;
+      margin-bottom: 2px;
+    }
+
+    .result {
+     list-style: none;
+    }
+
+    .result a {
+        color: #ef5330;
+    }
+
+    .result th {
+        font-size: 24px;
+    }
+
+    .result table {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        border: solid 1px #ef5330;
+    }
+
+    .result table th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <script src="scripts.js"></script>
+  </head>
+
+  <body>
+    <header id="header" class="center-block">
+        <img id="logo1" src="http://www.arborbrothers.org/wp-content/uploads/2016/08/scripted_primary_mark_orange.png">
+
+       <div class="search">
+        <select id= "select"> <option value="value1">Year 2</option>
+            <option value="value2" >Year 2</option> </select>
+
+        <input type="text" id="search-input"/>
+
+       <button id="search-button" class="btn-primary">Search  </button>
+      </div>
+
+    </header>
+     <h1 id="noResult">No results</h1>
+     <img src="http://orig06.deviantart.net/df77/f/2013/094/8/d/loading_logofinal_by_zegerdon-d60eb1v.gif" id="loadingIcon">
+    <div id="results">
+      <ul>
+        <li>
+
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
